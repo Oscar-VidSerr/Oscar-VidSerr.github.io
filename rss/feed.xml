@@ -3,7 +3,7 @@
     <channel>
 
         <title>El podcast de FP LLIURE</title>
-        <link>https://www.radioslibres.net</link>
+        <link>https://oscar-vidserr.github.io/index.html</link>
         <description>FP LLIURE presenta su podcast sobre radios comunitarias y tecnologías libres.</description>
         <copyright>CC 4.0 - BY-SA</copyright>
 
@@ -24,8 +24,9 @@
         <item>
             <title>Eloi Muska Miska Mickey Mouse buscat per la estafa del Bytecoin</title>
             <description>Eloi Muska ha dictaminat que una moneda digital la qual utilitzave per compres en la seva empresa, és "contaminant".</description>
-            <image src="../imatges/uglyelon.jpg">
+            <image>
                 <title>Retrat robot sobre aquest criminal buscat per la DEA</title>
+                <url>https://oscar-vidserr.github.io/imatges/uglyelon.jpg</url>
             </image>
             <author>FP LLIURE</author>
             <pubDate>Weed, 22 Jan 2020</pubDate>

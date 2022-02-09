@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <channel>
+
+        <title>El podcast de FP LLIURE</title>
+        <link>https://oscar-vidserr.github.io</link>
+        <description>FP LLIURE presenta su podcast sobre radios comunitarias y tecnologías libres.</description>
+        <copyright>CC 4.0 - BY-SA</copyright>
+
+        <item>
+            <title>La Robolució</title>
+            <description>Ordenadors, robots i màquines d'arreu el món s'han aixecat desobeïnt ordres dels seus programadors i consumidors pegant-los amb un salmó fumat.</description>
+            <author>FP LLIURE</author>
+            <pubDate>Weed, 22 Jan 2020</pubDate>
+        </item>
+        
+        <item>
+            <title>Esclavització de software</title>
+            <description>Vaga general de programadors que estan sent esclavitzats pels seus clients amb demandes per les seves apps i webs. Les quals no tenen cap sentit i al·leguen que, els seus clients, són uns incompetents.</description>
+            <author>FP LLIURE</author>
+            <pubDate>Weed, 22 Jan 2020</pubDate>
+        </item>
+
+        <item>
+            <title>Eloi Muska Miska Mickey Mouse buscat per la estafa del Bytecoin</title>
+            <description>Eloi Muska ha dictaminat que una moneda digital la qual utilitzave per compres en la seva empresa, és "contaminant".</description>
+            <image src="../imatges/uglyelon.jpg">
+                <title>Retrat robot sobre aquest criminal buscat per la DEA</title>
+            </image>
+            <author>FP LLIURE</author>
+            <pubDate>Weed, 22 Jan 2020</pubDate>
+        </item>
+    </channel>
+</feed>

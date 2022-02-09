@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pàgina Principal</title>
+    <link rel="shortcut icon" href="imatges/pato-white.png">
+    <link rel="stylesheet" href="estils/w3.css">
+    <link rel="stylesheet" href="estils/mycss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+        .w3-sidebar {
+            width: 120px;
+            background: #222222;
+        }
+        @media only screen and (max-width: 600px) {
+            #main {margin-left: 0}
+        }
+    </style>
+    <script src="script/javaS.js"></script>
+</head>
+<body class="w3-black" onload="showCarro()">
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <img alt="logo" src="imatges/pato-white.png" style="width:100%">
+        <a href="#main" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#quisom" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>QUI SOM</p>
+        </a>
+        <a href="html/feed.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-clipboard w3-xxlarge"></i>
+            <p>NOTÍCIES</p>
+        </a>
+        <a href="html/horari.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-calendar w3-xxlarge"></i>
+            <p>HORARIS</p>
+        </a>
+        <a href="html/cursos.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-book w3-xxlarge"></i>
+            <p>CURSOS</p>
+        </a>
+        <a href="html/contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACTA</p>
+        </a>
+        <a href="#xarxes" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-globe w3-xxlarge"></i>
+            <p>XARXES</p>
+        </a>
+    </nav>
+
+    <div class="w3-top w3-hide-large w3-hide-medium">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#main" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="#quisom" class="w3-bar-item w3-button" style="width:25% !important">QUI SOM</a>
+            <a href="html/feed.html" class="w3-bar-item w3-button" style="width:25% !important">NOTÍCIES</a>
+            <a href="html/horari.html" class="w3-bar-item w3-button" style="width:25% !important">HORARIS</a>
+            <a href="html/cursos.html" class="w3-bar-item w3-button" style="width:25% !important">CURSOS</a>
+            <a href="html/contact.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACTA</a>
+            <a href="#xarxes" class="w3-bar-item w3-button" style="width:25% !important">XARXES</a>
+        </div>
+    </div>
+
+    <div class="w3-padding-large" id="main">
+        <div class="w3-hide-large w3-hide-medium w3-padding-32">
+        </div>
+        <header class="w3-container w3-center">
+            <h1 class="w3-xxlarge"><b>FP LLIURE</b></h1>
+            <a href="html/registre.html"><button class="w3-button w3-border w3-border-gray">Registra't</button></a>
+            <a href="html/login.html"><button class="w3-button w3-gray w3-hover-black w3-border w3-hover-dark-gray">Inicia Sessió</button></a>
+        </header>
+
+        <div class="slideshow-container w3-padding-32 w3-hide-small">
+            <div class="Carrousel fade">
+                <img alt="Informàtica" src="imatges/info.jpg" class="w3-hover-opacity" style="width: 100%; height: 500px;">
+            </div>
+              
+            <div class="Carrousel fade">
+                <img alt="Hardware" src="imatges/admin.jpg" class="w3-hover-opacity" style="width: 100%; height: 500px;">
+            </div>
+            
+            <div class="Carrousel fade">
+                <img alt="Peces PC" src="imatges/foto.jpeg" class="w3-hover-opacity" style="width: 100%; height: 500px;">
+            </div>
+        </div><br>
+              
+        <div style="text-align:center" class="w3-hide-small">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+          <br><br><br><br><br>
+        </div>
+
+        <div class="w3-hide-large w3-hide-medium">
+            <img alt="Informàtica" src="imatges/educacio.jpg" class="w3-hover-opacity" style="width: 100%; height: 500px;">
+        </div>
+        
+        <div id="quisom">
+            <div class="w3-hide-large w3-hide-medium w3-padding-32">
+            </div>
+            <h1>Qui som?</h1>
+            <hr style="width:200px" class="w3-opacity">
+            <p>Som FP Liure i ens dediquem a oferir de manera online tot tipus de titulacions i cursos.</p>
+            <p>Coneixem la situació actual i sabem que la millor manera d'estudiar sense cap problema és de forma online.</p>
+            <p>No hi ha cap horari fixe per a realitzar tasques i exàmens. Però sí que oferim videoconferències dels nostres professors a certes hores les quals també seràn gravades i penjades, per si algú no pot veure la classe en el seu moment.</p>
+            <p>Per a més informació, contacta amb nosaltres i li resoldrem els dubtes encantats.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent lobortis tincidunt mauris et ornare. Etiam sagittis ut justo sed lobortis. Vestibulum in finibus lacus. Etiam eget nisl auctor, luctus orci id, malesuada ex. Vivamus vehicula urna tempus, aliquet mauris quis, porttitor velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer efficitur gravida nisi, vel aliquet dui aliquet non. Aenean accumsan lobortis diam, ut condimentum arcu fringilla in. Aenean consequat est id enim pharetra rutrum.</p>
+            <p>Sed in arcu quis nisi tincidunt venenatis a vel ante. Mauris fermentum erat id pellentesque fermentum. Nam condimentum turpis magna, ac fringilla nisi tincidunt eget. Vestibulum elementum leo nulla, vel dapibus ligula ornare a. Aenean sollicitudin neque id metus sagittis vulputate. Praesent eu blandit ex. Donec porta nisi at luctus suscipit.</p>
+            <p>Vivamus finibus, libero nec suscipit hendrerit, purus diam sodales lacus, ac consequat urna quam at leo. Nunc scelerisque tortor dui, eget condimentum felis auctor id. Nam velit lacus, ultricies nec scelerisque sed, tempor nec tellus. In hendrerit tincidunt pretium. Sed consectetur diam lectus, quis maximus sem ultricies ut. Fusce accumsan, ligula a gravida hendrerit, nibh augue sollicitudin ex, a venenatis odio ante vel magna. Phasellus mi odio, luctus nec mi id, egestas efficitur libero. Donec finibus pulvinar auctor. Cras maximus, metus vitae semper maximus, neque est ultrices lectus, sed iaculis nibh tellus eu libero. Sed gravida massa interdum commodo tempor. Pellentesque vel porta eros, at bibendum elit. Fusce at egestas sapien. Praesent dolor nulla, commodo scelerisque mollis ac, faucibus eu neque. Nam non nunc auctor ligula sagittis malesuada nec eget eros. Proin in eleifend leo. Quisque egestas accumsan dui ut ultrices.</p>
+        </div><br><br>
+
+        <div id="xarxes">
+            <div class="w3-hide-large w3-hide-medium w3-padding-32">
+            </div>
+            <h1>Xarxes Socials</h1>
+            <hr style="width:200px" class="w3-opacity">
+            <div class="w3-xxlarge">
+                <ul style="list-style-type: none;">
+                    <li>
+                        <a style="text-decoration: none;" href="https://facebook.com"><p class="w3-hover-opacity"><i class="fa-fw fa fa-facebook-official"></i> <span class="w3-large w3-text-gray">Facebook</span></a></p>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none;" href="https://instagram.com"><p class="w3-hover-opacity"><i class="fa-fw fa fa-instagram"></i> <span class="w3-large w3-text-gray">Instagram</span></a></p>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none;" href="https://twitter.com"><p class="w3-hover-opacity"><i class="fa-fw fa fa-twitter"></i> <span class="w3-large w3-text-gray">Twitter</span></a></p>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none;" href="https://linkedin.com"><p class="w3-hover-opacity"><i class="fa-fw fa fa-linkedin"></i> <span class="w3-large w3-text-gray">Linkedin</span></a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+        </footer>
+    </div>
+</body>
+</html>

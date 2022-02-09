@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre</title>
+    <link rel="shortcut icon" href="../imatges/pato-white.png">
+    <link rel="stylesheet" href="../estils/w3.css">
+    <link rel="stylesheet" href="../estils/mycss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+        .w3-sidebar {
+            width: 120px;
+            background: #222222;
+        }
+        @media only screen and (max-width: 600px) {
+            #main {margin-left: 0}
+        }
+    </style>
+    <script src="../script/javaS.js"></script>
+</head>
+<body class="w3-black">
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <img alt="logo" src="../imatges/pato-white.png" style="width:100%">
+        <a href="../index.html#main" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="../index.html#quisom" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>QUI SOM</p>
+        </a>
+        <a href="feed.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-clipboard w3-xxlarge"></i>
+            <p>NOTÍCIES</p>
+        </a>
+        <a href="horari.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-calendar w3-xxlarge"></i>
+            <p>HORARIS</p>
+        </a>
+        <a href="cursos.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-book w3-xxlarge"></i>
+            <p>CURSOS</p>
+        </a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACTA</p>
+        </a>
+        <a href="../index.html#xarxes" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-globe w3-xxlarge"></i>
+            <p>Xarxes</p>
+        </a>
+    </nav>
+    
+    <div class="w3-top w3-hide-large w3-hide-medium">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="../index.html#main" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="../index.html#quisom" class="w3-bar-item w3-button" style="width:25% !important">QUI SOM</a>
+            <a href="feed.html" class="w3-bar-item w3-button" style="width:25% !important">NOTÍCIES</a>
+            <a href="horari.html" class="w3-bar-item w3-button" style="width:25% !important">HORARIS</a>
+            <a href="cursos.html" class="w3-bar-item w3-button" style="width:25% !important">CURSOS</a>
+            <a href="contact.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACTA</a>
+            <a href="../index.html#xarxes" class="w3-bar-item w3-button" style="width:25% !important">XARXES</a>
+        </div>
+    </div>
+    <div class="w3-hide-large w3-hide-medium w3-padding-32">
+    </div>
+
+    <div class="w3-padding-large" id="main">
+        <header class="w3-container w3-center">
+            <h1 class="w3-xxlarge"><b>FP LLIURE</b></h1>
+            <a href="login.html"><button class="w3-button w3-gray w3-hover-black w3-border w3-hover-dark-gray">Inicia Sessió</button></a>
+        </header>
+
+        <div class="w3-padding-32 w3-margin-right">
+            <form>
+                <input type="text" class="w3-input w3-margin w3-padding-16" placeholder="Nom d'Usuari" required>
+                <input type="password" class="w3-input w3-margin w3-padding-16" placeholder="Contrasenya" required>
+                <input type="text" class="w3-input w3-margin w3-padding-16" placeholder="Nom" required>
+                <input type="text" class="w3-input w3-margin w3-padding-16" placeholder="Cognoms" required>
+                <input type="email" class="w3-input w3-margin w3-padding-16" placeholder="Email" required>
+                <input type="checkbox" class="w3-margin w3-padding-16" required><label>He llegit i accepto els <a class="w3-text-blue" onclick="openmodal()">tèrmins i condicions legals</a>.</label><br>
+                <button type="submit" class="w3-button w3-gray w3-hover-dark-gray"><i class="fa fa-paper-plane"></i> REGISTRA'T</button>
+            </form>
+        </div>
+
+        <div class="w3-modal w3-fade-in" id="modal" style="display: none;">
+            <div class="w3-modal-content w3-card-4 w3-animate-left" style="background-color: #222222;">
+                <div class="w3-container w3-margin w3-padding">
+                    <header class="w3-center">
+                        <h1>TÈRMINS I CONDICIONS</h1>
+                    </header>
+                    <p class="w3-margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dignissim sapien eget condimentum feugiat. Pellentesque sit amet placerat metus. Proin eros elit, egestas ut tellus sit amet, dapibus gravida nunc. Aenean at turpis ullamcorper, consequat velit non, imperdiet ipsum. Nullam fermentum vel orci nec molestie. Vestibulum non blandit magna, in tempor mauris. Nullam pretium massa sed tincidunt efficitur. Donec eu rhoncus mauris. Suspendisse quam orci, efficitur vel diam sit amet, auctor vehicula nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum gravida massa non maximus pharetra. Proin tristique consequat efficitur. Ut suscipit mi at tristique commodo.<br></p>
+                    <p class="w3-margin">Mauris vehicula erat libero, nec facilisis nulla elementum non. Integer tempus, sapien ut ultricies facilisis, arcu libero luctus urna, eget semper erat nisi sed augue. Praesent semper tristique volutpat. Phasellus id tortor sed justo vehicula hendrerit. Curabitur sit amet purus in lorem mollis semper. Nunc mattis, sem ac scelerisque ullamcorper, libero dui hendrerit augue, sed efficitur nisl diam non tellus. Nam faucibus metus urna, nec faucibus libero vehicula facilisis. Phasellus quis bibendum nunc. Donec ligula mauris, accumsan ut congue at, volutpat ac lectus. Morbi ultricies quis lacus vitae rhoncus. Proin sodales vestibulum libero, vitae eleifend nunc rhoncus et. Aenean blandit urna sollicitudin sollicitudin consequat. Morbi placerat lectus vel risus sollicitudin, et mollis magna malesuada. Nam ultricies dignissim ligula at varius. Nunc viverra sit amet nulla ut sodales. Nullam egestas urna porttitor, ullamcorper odio non, posuere arcu. <br>         </p>
+                    <p class="w3-margin">Morbi a tincidunt lorem, sit amet ultrices justo. Fusce placerat elit vitae congue sollicitudin. Fusce in odio libero. Nunc tincidunt vehicula blandit. Curabitur auctor non elit quis pretium. Mauris ornare a lorem lobortis varius. Sed placerat vitae odio non laoreet. Mauris mi lacus, euismod fringilla nisi sit amet, porta iaculis nisi. Mauris tempor consequat felis a imperdiet. Integer lobortis interdum enim, eu fringilla libero gravida sollicitudin. Proin nec nunc velit. Vivamus eu posuere elit, et commodo mi. Pellentesque pulvinar magna eu condimentum tempor.<br></p>
+                    <p class="w3-margin">Sed ligula elit, placerat eu mattis sed, luctus vitae ex. Ut tempus, ligula et condimentum vehicula, libero risus vulputate neque, eu gravida magna nisi in neque. Ut eget purus ac neque mollis laoreet sit amet nec est. Sed pharetra nulla mauris, vitae lacinia eros mattis bibendum. Donec porttitor placerat libero, sed congue eros hendrerit sed. Etiam dignissim ligula turpis, quis consectetur risus cursus vel. Mauris consequat suscipit finibus. In in sem a quam aliquam vulputate. Morbi sed imperdiet dolor. Maecenas in neque purus. Nam rutrum arcu in semper gravida. Ut ut nulla pellentesque, interdum lectus et, auctor dolor.<br></p>
+                    <div class="w3-center w3-margin-bottom"><button class="w3-button w3-green" onclick="closemodal()"><i class="fa fa-check"></i> Accepto</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

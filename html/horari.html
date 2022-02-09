@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horaris</title>
+    <link rel="shortcut icon" href="../imatges/pato-white.png">
+    <link rel="stylesheet" href="../estils/w3.css">
+    <link rel="stylesheet" href="../estils/mycss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .w3-row-padding img {
+            margin-bottom: 12px
+        }
+        .w3-sidebar {
+            width: 120px;
+            background: #222222;
+        }
+        @media only screen and (max-width: 600px) {
+            #main {margin-left: 0}
+        }
+    </style>
+    <script src="../script/javaS.js"></script>
+</head>
+<body class="w3-black">
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <img alt="logo" src="../imatges/pato-white.png" style="width:100%">
+        <a href="../index.html#main" class="w3-bar-item w3-button w3-padding-large w3-black">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="../index.html#quisom" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>QUI SOM</p>
+        </a>
+        <a href="feed.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-clipboard w3-xxlarge"></i>
+            <p>NOTÍCIES</p>
+        </a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-calendar w3-xxlarge"></i>
+            <p>HORARIS</p>
+        </a>
+        <a href="cursos.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-book w3-xxlarge"></i>
+            <p>CURSOS</p>
+        </a>
+        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>CONTACTA</p>
+        </a>
+        <a href="../index.html#xarxes" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <i class="fa fa-globe w3-xxlarge"></i>
+            <p>Xarxes</p>
+        </a>
+    </nav>
+    
+    <div class="w3-top w3-hide-large w3-hide-medium">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="../index.html#main" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+            <a href="../index.html#quisom" class="w3-bar-item w3-button" style="width:25% !important">QUI SOM</a>
+            <a href="feed.html" class="w3-bar-item w3-button" style="width:25% !important">NOTÍCIES</a>
+            <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HORARIS</a>
+            <a href="cursos.html" class="w3-bar-item w3-button" style="width:25% !important">CURSOS</a>
+            <a href="contact.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACTA</a>
+            <a href="../index.html#xarxes" class="w3-bar-item w3-button" style="width:25% !important">XARXES</a>
+        </div>
+    </div>
+    <div class="w3-hide-large w3-hide-medium w3-padding-32">
+    </div>
+
+    <div class="w3-padding-large" id="main">
+        <header class="w3-container w3-center">
+            <h1 class="w3-xxlarge"><b>FP LLIURE</b></h1>
+            <a href="registre.html"><button class="w3-button w3-border w3-border-gray">Registra't</button></a>
+            <a href="login.html"><button class="w3-button w3-gray w3-hover-black w3-border w3-hover-dark-gray">Inicia Sessió</button></a>
+        </header>
+
+        <div class="w3-row w3-margin-top">
+            <button class="w3-third w3-bottombar w3-padding w3-button" onclick="changeCFGM()">Cicles de Grau Mig</button>
+            <button class="w3-third w3-bottombar w3-padding w3-button" onclick="changeCFGS()">Cicles de Grau Superior</button>
+            <button class="w3-third w3-bottombar w3-padding w3-button" onclick="changeOTHER()">Altres Cursos Homologats</button>
+        </div>
+
+        <div class="w3-padding-16" style="display: block;" id="CFGM">
+            <h1>Videoconferències CFGM</h1>
+            <hr style="width:200px" class="w3-opacity">
+    
+            <table class="w3-centered w3-display-container w3-responsive">
+                <tr class="w3-dark-gray">
+                    <th>
+                        <p>HORES</p>
+                    </th>
+                    <th>
+                        <p>DILLUNS</p>
+                    </th>
+                    <th>
+                        <p>DIMARTS</p>
+                    </th>
+                    <th>
+                        <p>DIMECRES</p>
+                    </th>
+                    <th>
+                        <p>DIJOUS</p>
+                    </th>
+                    <th>
+                        <p>DIVENDRES</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>8:00 - 9:00</p>
+                    </td>
+                    <td class="w3-cyan" rowspan="3">
+                        <p><b>Carrossería</b></p>
+                        <p>Joan Roure</p>
+                    </td>
+    
+                    <td class="w3-lime" rowspan="2">
+                        <p><b>Electromecànica</b></p>
+                        <p>Ferran Eloi Gutiérrez</p>
+                    </td>
+    
+                    <td rowspan="2">
+                    </td>
+    
+                    <td class="w3-pink" rowspan="3">
+                        <p><b>Sistemes Microinformàtics i Xarxes</b></p>
+                        <p>Mº dels Àngels Cervelló</p>
+    
+                    </td>
+    
+                    <td class="w3-pink" rowspan="2">
+                        <p><b>Sistemes Microinformàtics i Xarxes</b></p>
+                        <p>Mº dels Àngels Cervelló</p>
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>9:00 - 10:55</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>10:55 - 11:50</p>
+                    </td>
+    
+                    <td class="w3-pink">
+                        <p><b>Sistemes Microinformàtics i Xarxes</b></p>
+                        <p>Mº dels Àngels Cervelló</p>
+                    </td>
+    
+                    <td class="w3-deep-orange">
+                        <p><b>Telecomunicacions</b></p>
+                        <p>Nil Torrent</p>
+                    </td>
+    
+                    <td class="w3-lime">
+                        <p><b>Electromecànica</b></p>
+                        <p>Ferran Eloi Gutiérrez</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>18:15 - 19:10</p>
+                    </td>
+    
+                    <td class="w3-deep-purple" rowspan="3">
+                        <p><b>Preimpressió Digital</b></p>
+                        <p>David Tomàs Boixadera</p>
+                    </td>
+    
+                    <td class="w3-aqua">
+                        <p><b>Vídeo, DiscJokei i So</b></p>
+                        <p>Xavier Faus</p> 
+                    </td>
+    
+                    <td class="w3-aqua">
+                        <p><b>Vídeo, DiscJokei i So</b></p>
+                        <p>Xavier Faus</p>
+                    </td>
+    
+                    <td class="w3-deep-orange" rowspan="2">
+                        <p><b>Telecomunicacions</b></p>
+                        <p>Nil Torrent</p>
+                    </td>
+    
+                    <td rowspan="3">
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>19:10 - 20:05</p>
+                    </td>
+    
+                    <td class="w3-cyan">
+                        <p><b>Carrossería</b></p>
+                        <p>Joan Roure</p>
+                    </td>
+    
+                    <td class="w3-lime">
+                        <p><b>Electromecànica</b></p>
+                        <p>Ferran Eloi Gutiérrez</p>  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>20:05 - 21:00</p>
+                    </td>
+    
+                    <td class="w3-deep-orange">
+                        <p><b>Telecomunicacions</b></p>
+                        <p>Nil Torrent</p> 
+                    </td>
+    
+                    <td class="w3-aqua">
+                        <p><b>Vídeo, DiscJokei i So</b></p>
+                        <p>Xavier Faus</p>
+                    </td>
+    
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="w3-padding-16" style="display: none;" id="CFGS">
+            <h1>Videoconferències CFGS</h1>
+            <hr style="width:200px" class="w3-opacity">
+
+            <table class="w3-centered w3-display-container w3-responsive">
+                <tr class="w3-dark-gray">
+                    <th>
+                        <p>HORES</p>
+                    </th>
+                    <th>
+                        <p>DILLUNS</p>
+                    </th>
+                    <th>
+                        <p>DIMARTS</p>
+                    </th>
+                    <th>
+                        <p>DIMECRES</p>
+                    </th>
+                    <th>
+                        <p>DIJOUS</p>
+                    </th>
+                    <th>
+                        <p>DIVENDRES</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>8:00 - 9:00</p>
+                    </td>
+                    <td class="w3-cyan" rowspan="3">
+                        <p><b>Automoció</b></p>
+                        <p>Josep María Flix</p>
+                    </td>
+    
+                    <td class="w3-lime" rowspan="2">
+                        <p><b>Desenvolupament d'Aplicacions Web</b></p>
+                        <p>Josep María Flix</p>
+                    </td>
+    
+                    <td class="w3-green" rowspan="2">
+                        <p><b>Manteniment electrònic</b></p>
+                        <p>Jordi Farrando</p>
+                    </td>
+    
+                    <td class="w3-pink" rowspan="3">
+                        <p><b>Desenvolupament d'Aplicacions Multiplataforma</b></p>
+                        <p>Esteve Brugulat</p>
+    
+                    </td>
+    
+                    <td class="w3-pink" rowspan="2">
+                        <p><b>Desenvolupament d'Aplicacions Multiplataforma</b></p>
+                        <p>Esteve Brugulat</p>
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>9:00 - 10:55</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>10:55 - 11:50</p>
+                    </td>
+    
+                    <td class="w3-pink">
+                        <p><b>Desenvolupament d'Aplicacions Multiplataforma</b></p>
+                        <p>Esteve Brugulat</p>
+                    
+                    </td>
+    
+                    <td class="w3-deep-orange">
+                        <p><b>Disseny i edició de publicacions impresses i multimèdia</b></p>
+                        <p>María del Mar Lluelles</p>
+                    </td>
+    
+                    <td class="w3-lime">
+                        <p><b>Desenvolupament d'Aplicacions Web</b></p>
+                        <p>Josep María Flix</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>18:15 - 19:10</p>
+                    </td>
+    
+                    <td class="w3-green" rowspan="3">
+                        <p><b>Manteniment electrònic</b></p>
+                        <p>Jordi Farrando</p>
+                    </td>
+    
+                    <td class="w3-aqua">
+                        <p><b>I.luminació, captació i tractament d'imatge</b></p>
+                        <p>Xavier Molina</p> 
+                    </td>
+    
+                    <td class="w3-aqua">
+                        <p><b>I.luminació, captació i tractament d'imatge</b></p>
+                        <p>Xavier Molina</p>
+                    </td>
+    
+                    <td class="w3-deep-orange" rowspan="2">
+                        <p><b>Disseny i edició de publicacions impresses i multimèdia</b></p>
+                        <p>María del Mar Lluelles</p>
+                    </td>
+    
+                    <td class="w3-deep-purple" rowspan="3">
+                        <p><b>Administració de Sistemes Informàtics en la Xarxa</b></p>
+                        <p>Joan Rocaespana</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>19:10 - 20:05</p>
+                    </td>
+    
+                    <td class="w3-cyan">
+                        <p><b>Automoció</b></p>
+                        <p>Joan Roure</p>
+                    </td>
+    
+                    <td class="w3-lime">
+                        <p><b>Desenvolupament d'Aplicacions Web</b></p>
+                        <p>Josep María Flix</p>  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>20:05 - 21:00</p>
+                    </td>
+    
+                    <td class="w3-deep-orange">
+                        <p><b>Disseny i edició de publicacions impresses i multimèdia</b></p>
+                        <p>María del Mar Lluelles</p> 
+                    </td>
+    
+                    <td class="w3-aqua">
+                        <p><b>I.luminació, captació i tractament d'imatge</b></p>
+                        <p>Xavier Molina</p>
+                    </td>
+    
+                    <td class="w3-deep-purple">
+                        <p><b>Administració de Sistemes Informàtics en la Xarxa</b></p>
+                        <p>Joan Rocaespana</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="w3-padding-16" style="display: none;" id="OTHER">
+            <h1>Videoconferències d'Altres Cursos</h1>
+            <hr style="width:200px" class="w3-opacity">
+
+            <table class="w3-centered w3-display-container w3-responsive">
+                <tr class="w3-dark-gray">
+                    <th>
+                        <p>HORES</p>
+                    </th>
+                    <th>
+                        <p>DILLUNS</p>
+                    </th>
+                    <th>
+                        <p>DIMARTS</p>
+                    </th>
+                    <th>
+                        <p>DIMECRES</p>
+                    </th>
+                    <th>
+                        <p>DIJOUS</p>
+                    </th>
+                    <th>
+                        <p>DIVENDRES</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>8:00 - 9:00</p>
+                    </td>
+                    <td class="w3-cyan" rowspan="3">
+                        <p><b>Tractament d'aliments</b></p>
+                        <p>Ian Florensa</p>
+                    </td>
+    
+                    <td class="w3-lime" rowspan="2">
+                        <p><b>Primers Auxilis</b></p>
+                        <p>Oriol Prats</p>
+                    </td>
+    
+                    <td rowspan="2">
+                    </td>
+    
+                    <td class="w3-pink" rowspan="3">
+                        <p><b>Auxiliar d'infermeria</b></p>
+                        <p>David Jové</p>
+    
+                    </td>
+    
+                    <td class="w3-pink" rowspan="2">
+                        <p><b>Auxiliar d'infermeria</b></p>
+                        <p>David Jové</p>
+    
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>9:00 - 10:55</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>10:55 - 11:50</p>
+                    </td>
+    
+                    <td class="w3-pink">
+                        <p><b>Auxiliar d'infermeria</b></p>
+                        <p>David Jové</p>
+                    </td>
+    
+                    <td class="w3-deep-orange">
+                        <p><b>Excel i fulls de Càlcul</b></p>
+                        <p>Oriol Juste</p>
+                    </td>
+    
+                    <td class="w3-lime">
+                        <p><b>Primers Auxilis</b></p>
+                        <p>Oriol Prats</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>18:15 - 19:10</p>
+                    </td>
+    
+                    <td class="w3-deep-purple" rowspan="3">
+                        <p><b>Anglés nivell A1 i B2</b></p>
+                        <p><b>Adrià Chimeno</b></p>
+                    </td>
+    
+                    <td class="w3-aqua">
+                        <p><b>Emprendiment Tecnològic</b></p>
+                        <p>Òscar Vidal</p> 
+                    </td>
+    
+                    <td class="w3-aqua">
+                        <p><b>Emprendiment Tecnològic</b></p>
+                        <p>Òscar Vidal</p>
+                    </td>
+    
+                    <td class="w3-deep-orange" rowspan="2">
+                        <p><b>Excel i fulls de Càlcul</b></p>
+                        <p>Oriol Juste</p>
+                    </td>
+    
+                    <td rowspan="3">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>19:10 - 20:05</p>
+                    </td>
+    
+                    <td class="w3-cyan">
+                        <p><b>Tractament d'aliments</b></p>
+                        <p>Ian Florensa</p>
+                    </td>
+    
+                    <td class="w3-lime">
+                        <p><b>Primers Auxilis</b></p>
+                        <p>Oriol Prats</p>  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="w3-dark-gray">
+                        <p>20:05 - 21:00</p>
+                    </td>
+    
+                    <td class="w3-deep-orange">
+                        <p><b>Excel i fulls de Càlcul</b></p>
+                        <p>Oriol Juste</p> 
+                    </td>
+    
+                    <td class="w3-aqua">
+                        <p><b>Emprendiment Tecnològic</b></p>
+                        <p>Òscar Vidal</p>
+                    </td>
+    
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
